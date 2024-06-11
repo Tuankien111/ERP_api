@@ -61,7 +61,7 @@ def plot_and_save(data, plot_path, currency):
 
 @app.get("/chart")
 def get_plot_image():
-    plot_path = "./chart.png"
+    plot_path = "./plotUSDVND.png"
     return StreamingResponse(open(plot_path, "rb"), media_type="image/png")
 
 @app.get("/predict")
